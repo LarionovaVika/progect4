@@ -1,5 +1,7 @@
 a = int(input())
 d = input()
 c = int(input())
-b = d.split('1')
+b = []
+for u in d.split('1'):
+    b.upend([u])
 for i in range(c):
