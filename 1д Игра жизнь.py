@@ -7,7 +7,7 @@ for i in d.split('1'):
     b.append([i])
     e.append([i])
 for u in range(c):
-    for y in range(a - 1):
+    for y in range(a):
         if y == 0:
             if b[y][0] == '*':
                 if b[y + 1][0] == '*' and b[a - 1][0] == '*':
@@ -30,6 +30,7 @@ for u in range(c):
                     e[y][0] = '*'
                 elif b[y - 1][0] == ' ' and b[0][0] == '*':
                     e[y][0] = '*'
+                
         else:
             if b[y][0] == '*':
                 if b[y - 1][0] == '*' and b[y + 1][0] == '*':
@@ -43,5 +44,7 @@ for u in range(c):
                     e[y][0] = '*'
     b = []
     for t in e:
-        b.append(t)
+        for r in t:
+            b.append([r])
+    print(b)
     print(e)
