@@ -45,6 +45,5 @@ for u in range(c):
     b = []
     for t in e:
         for r in t:
-            b.append([r])
-    print(b)
+            b.append([])
     print(e)
