@@ -9,3 +9,11 @@ for u in range(c):
         if y == 0:
             if b[y] == '*':
                 if b[y + 1] == '*' and b[a - 1] == '*':
+                    b[y] = ' '
+                elif b[y + 1] == ' ' and b[a - 1] == ' ':
+                    b[y] = ' '
+            else:
+                if b[y + 1] == '*' and b[a - 1] == ' ':
+                    b[y] = '*'
+                elif b[y + 1] == ' ' and b[a - 1] == '*':
+                    b[y] = '*'
