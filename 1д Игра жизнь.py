@@ -1,12 +1,14 @@
 a = int(input()) # длина мира
+a = int(input()) # длина мира
 d = input() # мир
 c = int(input()) # количество поколений
 b = [] # мир для изменений
 e = [] # получившийся мир
-f = 0
+f = 0 # счётчик для определения осталась жизнь или нет
 for i in d.split('1'):
     b.append([i])
     e.append([i])
+print(e)
 for u in range(c):
     for q in e:
         if q[0] == '*':
