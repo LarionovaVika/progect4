@@ -17,3 +17,14 @@ for u in range(c):
                     b[y] = '*'
                 elif b[y + 1] == ' ' and b[a - 1] == '*':
                     b[y] = '*'
+        elif y == a - 1:
+            if b[y] == '*':
+                if b[y - 1] == '*' and b[0] == '*':
+                    b[y] = ' '
+                elif b[y - 1] == ' ' and b[0] == ' ':
+                    b[y] = ' '
+            else:
+                if b[y - 1] == '*' and b[0] == ' ':
+                    b[y] = '*'
+                elif b[y - 1] == ' ' and b[0] == '*':
+                    b[y] = '*'
