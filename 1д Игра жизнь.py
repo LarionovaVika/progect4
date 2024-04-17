@@ -1,11 +1,14 @@
 a = int(input()) # длина мира
-a = int(input()) # длина мира
 d = input() # мир
+while len(d) != a:
+    print('Длина введённого мира не соответствует изначально вводимой длине.')
+    print('Изначальная длина:', str(a) + '.')
+    d = input()
 c = int(input()) # количество поколений
 b = [] # мир для изменений
 e = [] # получившийся мир
 f = 0 # счётчик для определения осталась жизнь или нет
-for i in d.split('1'):
+for i in d:
     b.append([i])
     e.append([i])
 print(e)
@@ -54,4 +57,6 @@ for u in range(c):
     for t in e:
         for r in t:
             b.append([r])
+    print(e)
+
     print(e)
