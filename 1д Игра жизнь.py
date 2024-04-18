@@ -11,6 +11,7 @@ print('Если есть два соседа - не рождается')
 print('Если нет соседей - не рождается')
 print('Пробел - нет жизни, "*" - есть жизнь.')
 z = ''
+import time
 while z != 'нет':
     print('Выберите: вы вводите мир(1) или мир генерируется сам(2)')
     abc = input()
@@ -53,6 +54,7 @@ while z != 'нет':
         b.append([i])
         e.append([i])
     print(e)
+    time.sleep(0.5)
     for u in range(c):
         for q in e:
             if q[0] == '*':
@@ -99,6 +101,7 @@ while z != 'нет':
             for r in t:
                 b.append([r])
         print(e)
+        time.sleep(0.5)
     print('Хотите запустить новую генерацию.')
     z = input()
     while z != 'нет' and z != 'да':
